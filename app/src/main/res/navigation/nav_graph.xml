@@ -3,17 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homePage_Fragment">
+    app:startDestination="@id/first_Fragment">
 
     <fragment
         android:id="@+id/homePage_Fragment"
         android:name="com.zeynepduyenli.biseyapp.HomePage_Fragment"
         android:label="fragment_home_page_"
-        tools:layout="@layout/fragment_home_page_">
-        <action
-            android:id="@+id/action_homePage_Fragment_to_first_Fragment3"
-            app:destination="@id/first_Fragment" />
-    </fragment>
+        tools:layout="@layout/fragment_register"/>
     <fragment
         android:id="@+id/first_Fragment"
         android:name="com.zeynepduyenli.biseyapp.First_Fragment"
