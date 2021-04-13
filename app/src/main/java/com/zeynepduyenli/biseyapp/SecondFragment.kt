@@ -24,7 +24,7 @@ class SecondFragment : Fragment() {
         val ft = fm.beginTransaction()
         val button: ImageButton = view.findViewById(R.id.imageButton2)
         button.setOnClickListener {
-            ft.replace(R.id.fragment, RegisterFragment())
+            ft.replace(R.id.fragment, ThirdFragment())
             ft.commit()
         }
     }
