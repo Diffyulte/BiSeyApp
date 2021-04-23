@@ -17,6 +17,7 @@
 
     <ImageView
         android:id="@+id/icon"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="360dp"
         android:layout_height="298dp"
         android:layout_marginStart="60dp"
@@ -25,11 +26,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/icon" />
 
+
     <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
+        android:id="@+id/editTextUser"
+        android:layout_width="263dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="268dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:fontFamily="@font/heebo_thin"
@@ -38,13 +40,11 @@
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
+        app:layout_constraintEnd_toEndOf="@id/editTextPassword" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/editTextPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="204dp"
@@ -66,11 +66,11 @@
         android:layout_width="22dp"
         android:layout_height="24dp"
         android:backgroundTint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextUser"
+        app:layout_constraintEnd_toEndOf="@+id/editTextUser"
         app:layout_constraintHorizontal_bias="0.031"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextUser"
+        app:layout_constraintTop_toTopOf="@+id/editTextUser"
         app:layout_constraintVertical_bias="0.523"
         app:srcCompat="@drawable/womaan" />
 
@@ -78,16 +78,16 @@
         android:id="@+id/imageView15"
         android:layout_width="22dp"
         android:layout_height="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextPassword"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPassword"
         app:layout_constraintHorizontal_bias="0.031"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintStart_toStartOf="@+id/editTextPassword"
+        app:layout_constraintTop_toTopOf="@+id/editTextPassword"
         app:layout_constraintVertical_bias="0.52"
         app:srcCompat="@drawable/loockk" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/girisButton"
         android:layout_width="186dp"
         android:layout_height="49dp"
         android:layout_marginBottom="132dp"
@@ -104,13 +104,13 @@
         android:fontFamily="@font/heebo_medium"
         android:text="Giriş diyoruz.."
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton"
-        app:layout_constraintStart_toStartOf="@+id/imageButton"
-        app:layout_constraintTop_toTopOf="@+id/imageButton" />
+        app:layout_constraintBottom_toBottomOf="@+id/girisButton"
+        app:layout_constraintEnd_toEndOf="@+id/girisButton"
+        app:layout_constraintStart_toStartOf="@+id/girisButton"
+        app:layout_constraintTop_toTopOf="@+id/girisButton" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/uyeButton"
         android:layout_width="191dp"
         android:layout_height="42dp"
         android:layout_marginBottom="72dp"
@@ -127,9 +127,9 @@
         android:fontFamily="@font/heebo_medium"
         android:text="Üye Olmak İstersen eğer.."
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton2"
-        app:layout_constraintStart_toStartOf="@+id/imageButton2"
-        app:layout_constraintTop_toTopOf="@+id/imageButton2" />
+        app:layout_constraintBottom_toBottomOf="@+id/uyeButton"
+        app:layout_constraintEnd_toEndOf="@+id/uyeButton"
+        app:layout_constraintStart_toStartOf="@+id/uyeButton"
+        app:layout_constraintTop_toTopOf="@+id/uyeButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
